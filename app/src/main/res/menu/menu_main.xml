@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemLOW"
+        android:title="最低清" />
+    <item
+        android:id="@+id/menuItemHIGH"
+        android:title="最高清" />
+    <item
+        android:id="@+id/menuItemQCIF"
+        android:title="QCIF" />
+    <item
+        android:id="@+id/menuItemCIF"
+        android:title="CIF" />
+    <item
+        android:id="@+id/menuItem480P"
+        android:title="480P" />
+    <item
+        android:id="@+id/menuItem720P"
+        android:title="720P" />
+    <item
+        android:id="@+id/menuItem1080P"
+        android:title="1080P" />
+    <item
+        android:id="@+id/menuItemQVGA"
+        android:title="QVGA" />
+    <item
+        android:id="@+id/menuItem2160P"
+        android:title="2160P" />
+</menu>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.leo618.recorder.MainActivity"
+    tools:ignore="HardcodedText">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="startRecord"
+        android:text="开始录制" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="stopRecord"
+        android:text="结束录制" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="videoListPage"
+        android:text="已录制视频列表" />
+
+    <TextView
+        android:id="@+id/mTimeUI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="160dp"
+            android:layout_height="240dp"
+            android:layout_gravity="bottom|end"
+            android:contentDescription="@null" />
+
+        <com.leo618.librecorder.RecorderSurface
+            android:id="@+id/mSurface"
+            android:layout_width="160dp"
+            android:layout_height="240dp" />
+    </FrameLayout>
+</LinearLayout>
